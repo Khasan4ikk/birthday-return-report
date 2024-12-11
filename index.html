@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратный отсчет</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video id="background-video" autoplay muted loop style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;"></video>
+    <!-- countdown-wrapper -->
+    <div class="countdown-wrapper">
+        <h1 class="title">До моего дня рождения <span class="dateHP">27.12</span> осталось</h1>
+        <div id="year" class="year"></div>
+        <div class="countdown" id=countdown>
+            <div class="time">
+                <h2 id="days">00</h2>
+                <small>дней</small>
+            </div>
+            <div class="time">
+                <h2 id="hours">00</h2>
+                <small>часов</small>
+            </div>
+            <div class="time">
+                <h2 id="minutes">00</h2>
+                <small>минут</small>
+            </div>
+            <div class="time">
+                <h2 id="seconds">00</h2>
+                <small>секунд</small>
+            </div>
+        </div>
+        <div class="preloader" id="preloader">
+            <div class="lds-ripple"><div></div><div></div></div>
+        </div>
+    </div>
+    <!-- // countdown-wrapper -->
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
